@@ -1,18 +1,402 @@
 <html>
-  <head>
-    <title>Asray's Website</title>
-  </head>
-  <body>
-    <h1>Asray's Website</h1>
-  </body>
-  <body>
-    <h3>Directory</h3>
-    <a href="blog.html">blog posts</a> <br />
-    <a href="startup.html">my "startup" experience</a><br />
-    <a href="professional.html">my professional experience</a><br />
-    <a href="education.html">my education</a><br />
-    <a href="tv.html">tv shows i like</a><br />
-    <a href="projects.html">projects</a><br />
-    <a href="competitions.html">things i competed in</a><br />
-  </body>
+<head>
+  <title>Asray Gopa</title>
+  <style>
+    nav { display: flex; gap: 24px; border-bottom: 1px solid black; padding-bottom: 8px; margin-bottom: 24px; }
+    nav a { text-decoration: none; color: black; font-weight: bold; cursor: pointer; }
+    nav a:hover { text-decoration: underline; }
+    section { display: none; }
+    section.active { display: block; }
+  </style>
+</head>
+<body>
+
+<h1>Asray Gopa</h1>
+
+<nav>
+  <a onclick="show('about')">About</a>
+  <a onclick="show('career')">Career</a>
+  <a onclick="show('research')">Research</a>
+  <a onclick="show('entrepreneurship')">Entrepreneurship</a>
+  <a onclick="show('projects')">Projects</a>
+  <a onclick="show('college')">College</a>
+  <a onclick="show('wins')">Wins</a>
+  <a onclick="show('tv')">TV</a>
+  <a onclick="show('blog')">Blog</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I'm Asray Gopa, a computer science student at Iowa State University building at the intersection of software, markets, and real-world systems. I'm drawn to problems that involve scale, uncertainty, and decision-making — from prediction market data infrastructure to consumer hardware products.
+  </p>
+  <p>
+    I've built and shipped projects ranging from The Brik, a physical consumer product sold to hundreds of customers, to trading and data systems that process live orderbook streams. I care about building things that are technically rigorous, economically grounded, and actually used.
+  </p>
+  <p>
+    Long term, I want to work on systems where engineering meets incentives — financial infrastructure, data platforms, and intelligent decision systems. I'm less interested in building features. I'm more interested in building leverage.
+  </p>
+  <p>
+    <a href="https://asraygopa.com">asraygopa.com</a> &middot;
+    <a href="https://github.com/asraygopa">github.com/asraygopa</a> &middot;
+    <a href="https://linkedin.com/in/asrayg">linkedin.com/in/asrayg</a>
+  </p>
+</section>
+
+<section id="career">
+  <h2>Career</h2>
+
+  <p>
+    <strong>Principal Financial Group — Software Engineering Intern</strong> · May 2025 – Present · Des Moines, IA<br>
+    Built and deployed 3 full-stack applications (Node.js + Spring Boot), improving process efficiency and saving teams 100+ hours per week. Contributed to the entire SDLC — design, coding, testing, deployment, and documentation. Implemented chaos engineering experiments on AWS to simulate failures, reducing downtime risk by 20%+ while optimizing cloud spend. Supported data recovery and disaster recovery strategies, protecting actuarial models that underpin billions in managed assets.
+  </p>
+
+  <p>
+    <strong>Collins Aerospace — Software Engineer Contractor</strong> · Sep 2025 – Dec 2025 · Remote<br>
+    Streamlined certification workflows by integrating project artifacts into a unified system, cutting artifact reconciliation time by 30%. Improved traceability and baseline management with a graph-based backend, reducing engineering errors and rework by ~25%. Built a Next.js frontend to visualize cross-tool impact, increasing requirement coverage visibility by 40%. <a href="collins.html">details</a>
+  </p>
+
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+
+  <p>
+    <strong>National Science Foundation — Moothedath Research Lab</strong> · Research Intern · Jan 2025 – Sep 2025 · Ames, IA<br>
+    Prototyped decentralized machine learning models in Python, enabling scalable multi-task learning with reduced training overhead. Applied spectral clustering and graph algorithms to group related tasks, boosting accuracy by 15% in experimental benchmarks. Deployed distributed training simulations on AWS EC2, achieving 30% faster convergence and validating performance with Frobenius error.
+  </p>
+
+  <p>
+    <strong>National Science Foundation — ARA Wireless Labs</strong> · Research Intern · May 2024 – Dec 2024 · Ames, IA<br>
+    Designed deep learning models to analyze wireless spectrum data (TV white space, LoRa), improving signal detection accuracy by 25%. Developed a LoRAMesh sensor hub for farmers, using machine learning and computer vision to analyze plant health and detect pests. Automated data ingestion and hardware setup, cutting manual work by 40+ hours a week and reducing deployment time by 200%.
+  </p>
+
+  <p>
+    <strong>CS Department Independent Study</strong> · Spring 2026<br>
+    Investigating Continuous Thought Machines (CTMs) as an alternative to Transformer models for reasoning over continuous, real-time data streams such as financial order books. Compares CTMs to Transformer-based models on a streaming Bitcoin order book prediction task, evaluating accuracy, reaction latency, prediction stability, and computational efficiency. The study aims to understand whether continuous, stateful computation provides advantages over episodic inference in fast-changing, real-world environments.
+  </p>
+</section>
+
+<section id="entrepreneurship">
+  <h2>Entrepreneurship</h2>
+
+  <p>
+    <strong>Chief Innovation Officer — The Brik.</strong> · Aug 2023 – Present<br>
+    Orchestrated the development and market launch of The Brik, a compact organizational tool, from concept to fruition. Oversaw market research, prototype development with 3D printing and laser cutting, and manufacturer partnerships. Implemented marketing strategies including social media campaigns to build brand awareness and gather customer feedback.
+  </p>
+
+  <p>
+    <strong>Chief Executive Officer — HerdRight</strong> · Jan 2024 – Mar 2025<br>
+    Led the development of herdright.com, a web app connecting farmers with bovine reproductive material, using React, AWS, and Edge Functions. Implemented real-time data updates, user authentication, AI matching, Stripe API, and optimized search to enhance marketplace efficiency. Managed fundraising efforts, investor relations, and led a team of four.
+  </p>
+
+  <p>
+    <strong>Editor in Chief — Scalar News</strong> · Aug 2019 – Sep 2022<br>
+    Established and managed a news service providing daily news content in under 50 words. Grew the platform to over 2.9 million annual readers by focusing on brevity and clarity. Developed an Expo app leveraging automated journalism through large language models and machine learning.
+  </p>
+
+  <p>
+    <strong>Chief Executive Officer — Teen Talks Money</strong> · Sep 2019 – Sep 2022<br>
+    Founded and led an organization focused on promoting financial literacy, engaging a monthly audience of 25,000+. Supervised a team of 40 content creators, writers, marketers, and designers. Presented on podcasts, student magazines, and articles to spread financial literacy awareness.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <p>
+    ApexNurse &middot;
+    Pippa &middot;
+    Scalar News &middot;
+    PitchPost &middot;
+    CyDine &middot;
+    The Brik &middot;
+    FarmVigil &middot;
+    VetU &middot;
+    ProfAI &middot;
+    Forex Arbitrage &middot;
+    ARuLearning &middot;
+    Waveshare Transparent Screen Driver &middot;
+    City Country State NPM Library &middot;
+    Big Nate Scraper &middot;
+    Old School Egg Catcher &middot;
+    GitHelper &middot;
+    Saftinet Insurance Card Generator &middot;
+    BusinessCofounder &middot;
+    Neighborhood Finance Lending Map &middot;
+    Efficient 3D Motion Planning for Autonomous Drone Fleets &middot;
+    DaveBluntsNoCookies &middot;
+    HerdRight &middot;
+    ColoringMindsRecordKeepingSystem
+  </p>
+</section>
+
+<section id="college">
+  <h2>College</h2>
+
+  <h3>Iowa State University &mdash; B.S. Computer Science (2022&ndash;2026)</h3>
+
+  <p><strong>Coursework:</strong> Motion Planning and Robotics, Nanoscale Programming of Microscopic Devices, Web Development, App Development, Database Management Systems, Design and Analysis of Algorithms, Computer Architecture and Machines, Discrete Computer Structures, Micro Economics</p>
+
+  <p>I did entrepreneurship, leadership, research, and innovation work at Iowa State. Brought myself outside my shell.</p>
+
+  <p>
+    <strong>Student Government Liberal Arts and Sciences Senator (2022–2024)</strong><br>
+    <strong>Student Government United Residents Off Campus Senator (2024–2025)</strong><br>
+    <strong>Student Government Legislative Ambassador (2023–2025)</strong><br>
+    <strong>United Residents Off Campus Council President (2024–2025)</strong><br>
+    <strong>United Residents Off Campus Council Vice President (2023–2024)</strong><br>
+    I really liked Student Government and made a lot of changes and got a lot of projects done. Had to quit when it got less about helping students and more about other members trying to help out their friends in the org. I served as a senior member and got to meet some cool people along the way.
+  </p>
+
+  <p>
+    <strong>Algorithmic Trading Club President (2025–2026)</strong><br>
+    Had an interest in algo trading and finance, so I restarted this club with Arjun Patel, a dear friend. It started off with rocky numbers, but I'm proud of how it's evolving.
+  </p>
+
+  <p>
+    <strong>Oak-Elm Hall Council President (2022)</strong><br>
+    Got impeached. I came off too strong and tried to make too many changes too fast, and the rest of the council didn't like that, so they had me impeached in my second meeting. Oh well. God forbid I try to make changes in an organization.
+  </p>
+
+  <p>
+    <strong>Solar Car Software Team Engineer (2022–2024)</strong><br>
+    <strong>Solar Car Strategy Team Engineer (2022–2024)</strong><br>
+    <strong>Solar Car Interim Business Manager (2024)</strong><br>
+    Learned a lot about teamwork and project management here. Got to work with talented people and learned how to manage a large team. Shoutout Nick!
+  </p>
+
+  <p>
+    <strong>Start Something LAS Academy Fellow (2023–2025)</strong><br>
+    Probably the better thing I did at ISU. Learned a lot about entrepreneurship, innovation, and how to start something from scratch. I'm glad I got to learn from Jeff Bull and so many others.
+  </p>
+
+  <p>
+    <strong>Computer Science Advisory Board Chair (2025–2026)</strong><br>
+    <strong>Computer Science Advisory Board Member (2024–2025)</strong><br>
+    Didn't get too much done as a member, but as chair I wanted to make more of an impact so I really changed how we ask the department to run things. There's no holding back, and other board members appreciate that I share true, honest feedback.
+  </p>
+
+  <p>
+    <strong>Student and Mayoral Appointee to CyRide Board of Trustees (2024–2025)</strong><br>
+    I LOVE CYRIDE AND I'M GLAD I GOT TO SERVE ON THEIR BOARD. Elected member and got commended by the mayor.
+  </p>
+
+  <p>
+    <strong>ISUPD Advisory Board Member (2022–2024)</strong><br>
+    Got to serve as a student member and had good discussions about fire and e-scooter safety with Chief Newton.
+  </p>
+
+  <p>
+    <strong>Sigma Nu Tau (2025–lifetime honor)</strong><br>
+    Your boy's first honor society. This is for entrepreneurship, and I got free money from it.
+  </p>
+
+  <p>
+    <strong>Cardinal Key (2025–lifetime honor)</strong><br>
+    Forgot I applied to this and didn't pay the fees, but they still inducted me. I don't know why.
+  </p>
+
+  <p>
+    <strong>President's Leadership Class (2022–2025)</strong><br>
+    Got to learn leadership from the big cheese at the university, President Wintersteen. Learned a bit, but I feel like real leadership comes from learning through experience.
+  </p>
+</section>
+
+<section id="wins">
+  <h2>Wins</h2>
+
+  <h3>Hackathons & Competitions</h3>
+
+  <p>
+    <strong>SwanHacks 2025 — 3rd Place</strong> · Iowa State Hackathon Club &amp; MLH · Nov 2025
+  </p>
+
+  <p>
+    <strong>Ivy Hackathon 2025 — 3rd Place</strong> · Iowa State University Ivy College of Business · Sep 2025
+  </p>
+
+  <p>
+    <strong>Principal Intern CodeJam 2025 — Finalist</strong> · Principal Financial Group · Jun 2025<br>
+    Top 5 team out of 25.
+  </p>
+
+  <p>
+    <strong>Midwest Entrepreneurship Conference Post Revenue Pitch Competition — 1st Place</strong> · University of Nebraska Omaha · Apr 2025
+  </p>
+
+  <p>
+    <strong>Ivy Hackathon 2024 — 1st Place</strong> · Iowa State University Ivy College of Business · Nov 2024<br>
+    Built VerifyAI with Arjun Patel and Justin Moran — an AI plugin that detects deepfake phone scams by analyzing voice patterns to protect users from impersonation fraud.
+  </p>
+
+  <p>
+    <strong>HackMidwest 2024 — 3rd Place (Student Category)</strong> · Sep 2024
+  </p>
+
+  <p>
+    <strong>Ag Innovation and Value Creation Competition — 1st Place</strong> · Iowa State University College of Agriculture and Life Sciences · Apr 2024<br>
+    Built Crop Model AI, an open-source AI application that advises farmers on how, when, and where to manage cropland to maximize ROI.
+  </p>
+
+  <p>
+    <strong>Iowa State University Coding Contest — 1st Place</strong> · ISU Department of Computer Science · Mar 2024<br>
+    Solved programming puzzles on Kattis within a five-hour time constraint.
+  </p>
+
+  <p>
+    <strong>BuildDSM — Best Pitch/Demo, 2nd Place Overall</strong> · Kreative Horizen · Feb 2024<br>
+    Built vetU, an AI/ML powered veterinary telehealth app using image recognition to provide preliminary pet diagnoses remotely.
+  </p>
+
+  <p>
+    <strong>2023 ISU Innovation Prize — 1st Place (AgTech)</strong> · Iowa State University Pappajohn Center of Entrepreneurship<br>
+    Led a team to build a wildfire detection and alerts solution using low-frequency radio waves, with a companion website and app. $2,500 prize.
+  </p>
+
+  <p>
+    <strong>Clayton Farms (YC W16) Hackathon 2022 — 1st Place</strong> · Nov 2022<br>
+    Revamped Clayton Farms website, created marketing material, and conducted bug testing. $600 prize.
+  </p>
+
+  <h3>Patents</h3>
+
+  <p>
+    <strong>Folding Instrument Comprising Of Multiple Miniaturized Geometrical Drawing Tools</strong> · Provisional Application<br>
+    US 63234252 · Issued Aug 18, 2021<br>
+    A folding device that combines rulers, compass, protractor, set-squares, shape tracing apparatus, and divider into one compact instrument that folds in half.
+  </p>
+
+  <h3>Honors &amp; Awards</h3>
+
+  <p>
+    <strong>Okoboji Entrepreneurship Institute — Cohort 18</strong> · Aug 2024<br>
+    1 of 33 Iowa's top student entrepreneurs selected.
+  </p>
+
+  <p>
+    <strong>Sigma Nu Tau Founder's Scholarship</strong> · Dec 2024<br>
+    Entrepreneurship honor society. Got free money from it.
+  </p>
+
+  <p>
+    <strong>Service &amp; Dignity Award</strong> · Iowa State University Student Government · Apr 2024<br>
+    Awarded for remarkable dedication through extensive hours, service across multiple semesters, and consistently being a positive force within the organization.
+  </p>
+
+  <p>
+    <strong>Cardinal Key (2025)</strong><br>
+    Honorary society. Forgot I applied and didn't pay fees, but they inducted me anyway.
+  </p>
+
+  <p>
+    <strong>Commended by Ames Mayor (2025)</strong><br>
+    CyRide Board of Trustees service.
+  </p>
+
+  <p>
+    <strong>Best Project &amp; App Award — COM S 3090 App Development</strong> · Iowa State University<br>
+    Awarded with Arjun Patel, Issmale Bekri, and Akhil Pallem for best project in the app development class.
+  </p>
+
+  <p>
+    <strong>Dean's List</strong> — F22, S23, F23, S24, F24, S25, F25<br>
+    Every semester.
+  </p>
+</section>
+
+<section id="tv">
+  <h2>TV Shows</h2>
+
+  <h3>A</h3>
+  <ul><li>Abbott Elementary</li><li>Alex Rider</li><li>Arrested Development</li><li>Arthur</li></ul>
+
+  <h3>B</h3>
+  <ul><li>Barry</li><li>Better Call Saul</li><li>Big Nate: The Animated TV Show</li><li>Billions</li><li>Black Bird</li><li>Black-ish</li><li>Blue Bloods</li><li>Bojack Horseman</li><li>Bizaardvark</li><li>Breaking Bad</li><li>Brooklyn Nine-Nine</li></ul>
+
+  <h3>C</h3>
+  <ul><li>Castle</li><li>Chicago Fire</li><li>Chicago Med</li><li>Citadel</li><li>Clifford the Big Red Dog</li><li>Cobra Kai</li><li>Comicstaan</li><li>Community</li><li>Covert Affairs</li><li>Criminal Minds</li><li>Curb Your Enthusiasm</li></ul>
+
+  <h3>D</h3>
+  <ul><li>Deli Boy</li><li>Dexter</li></ul>
+
+  <h3>E</h3>
+  <ul><li>Elementary</li><li>Entourage</li><li>Euphoria</li><li>Everyone Hates Chris</li></ul>
+
+  <h3>F</h3>
+  <ul><li>Falcon and the Winter Soldier</li><li>Family Guy</li><li>Fallout</li><li>Friends</li><li>Fresh Off the Boat</li><li>Fresh Prince of Bel-Air</li><li>Fuller House</li></ul>
+
+  <h3>G</h3>
+  <ul><li>Gen V</li><li>Georgie &amp; Mandy's First Marriage</li><li>Gotham</li><li>Gravity Falls</li><li>Grey's Anatomy</li></ul>
+
+  <h3>H</h3>
+  <ul><li>Hawkeye</li><li>House</li><li>House of Cards</li><li>House of Lies</li><li>How I Met Your Father</li><li>How I Met Your Mother</li><li>How to Get Away with Murder</li><li>Hunters</li></ul>
+
+  <h3>I</h3>
+  <ul><li>Invincible</li><li>iZombie</li><li>It's Always Sunny in Philadelphia</li></ul>
+
+  <h3>J</h3>
+  <ul><li>Jack Ryan</li><li>Joey</li></ul>
+
+  <h3>K</h3>
+  <ul><li>Key and Peele</li><li>Killing Eve</li><li>Kim's Convenience</li><li>Kota Factory</li></ul>
+
+  <h3>L</h3>
+  <ul><li>Lethal Weapon</li><li>Loki</li><li>Loot</li></ul>
+
+  <h3>M</h3>
+  <ul><li>Mad Men</li><li>Malcolm in the Middle</li><li>Marvelous Ms. Maisel</li><li>Master of None</li><li>Mixed-ish</li><li>Modern Family</li><li>Modern Love</li><li>Money Heist</li><li>Monk</li><li>Moon Knight</li><li>Mr. Robot</li><li>Ms. Marvel</li><li>MythBusters</li><li>Mythic Quest</li></ul>
+
+  <h3>N</h3>
+  <ul><li>Never Have I Ever</li><li>New Girl</li><li>The Newsroom</li><li>The Night Manager</li></ul>
+
+  <h3>O</h3>
+  <ul><li>Only Murders in the Building</li><li>Ozark</li></ul>
+
+  <h3>P</h3>
+  <ul><li>Parks and Recreation</li><li>Peacemaker</li><li>Person of Interest</li><li>Phineas and Ferb</li><li>Private Practice</li><li>Psych</li><li>The Purge</li></ul>
+
+  <h3>Q</h3>
+  <ul><li>Quantico</li><li>The Queen's Gambit</li></ul>
+
+  <h3>R</h3>
+  <ul><li>Regular Show</li><li>The Resident</li><li>Rick and Morty</li><li>Riverdale</li><li>The Rookie</li><li>Ruff Ruffman Show</li></ul>
+
+  <h3>S</h3>
+  <ul><li>Saturday Night Live</li><li>Scorpion</li><li>Scrubs</li><li>Severance</li><li>Sherlock</li><li>Shrinking</li><li>Silo</li><li>Silicon Valley</li><li>Squid Games</li><li>Station 19</li><li>Stranger Things</li><li>The Studio</li><li>Suits</li><li>Succession</li><li>Supernatural</li><li>Superstore</li></ul>
+
+  <h3>T</h3>
+  <ul><li>Ted</li><li>Ted Lasso</li><li>The Test</li><li>This Is Us</li><li>True Detective</li><li>Two and a Half Men</li></ul>
+
+  <h3>U</h3>
+  <ul><li>Upload</li><li>Unbreakable Kimmy Schmidt</li></ul>
+
+  <h3>V</h3>
+  <ul><li>Veep</li><li>Veronica Mars</li></ul>
+
+  <h3>W</h3>
+  <ul><li>Wednesday</li><li>WeCrashed</li><li>The West Wing</li><li>What If</li><li>White Collar</li><li>WandaVision</li></ul>
+
+  <h3>Y</h3>
+  <ul><li>Young Sheldon</li><li>Your Friends and Neighbors</li></ul>
+</section>
+
+<section id="blog">
+  <h2>Blog</h2>
+
+  <p><a href="firstblogpost.html">Hackathons and why everyone should be doing them</a></p>
+  <p><a href="secondblogpost.html">The Bull Semen Story and What I learned from it</a></p>
+  <p><a href="thirdblogpost.html">I studied in India and failed hard?</a></p>
+  <p><a href="forthblogpost.html">Do I wanna be like Tame Impala</a></p>
+</section>
+
+<script>
+  function show(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+  show('about');
+</script>
+
+</body>
 </html>
