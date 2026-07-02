@@ -39,6 +39,12 @@
     .entry-header span { color: var(--fg-muted); font-size: 0.9em; white-space: nowrap; margin-left: 16px; }
     .entry ul { margin: 4px 0 0 0; padding-left: 20px; }
     .entry ul li { margin-bottom: 2px; }
+    .blog-intro { color: var(--fg-muted); margin-top: 0; }
+    .blog-list { margin-top: 18px; }
+    .blog-item { border-bottom: 1px solid var(--border); padding: 14px 0; }
+    .blog-item h3 { margin: 0 0 2px; line-height: 1.3; }
+    .blog-item p { margin: 4px 0; }
+    .blog-date { color: var(--fg-muted); font-size: 0.9em; }
     table.photos { width: 100%; border-collapse: collapse; }
     table.photos td { width: 33%; padding: 8px; vertical-align: top; text-align: center; font-size: 0.9em; }
     table.photos img { width: 100%; height: 220px; object-fit: cover; }
@@ -97,7 +103,7 @@
   
   <p>Long term, I want to build something that actually matters. Something durable. Something that changes how people operate. I want to create tools and systems that give people leverage and leave a lasting impact.</p>
   
-  <p><strong>tldr: curious guy; 6x hackathon winner; 8x pitch comp winner; 6x student Leader; 3x researcher; 1x exited founder; The Brik & AxA Trading</p>
+  <p><strong>tldr:</strong> curious guy; 6x hackathon winner; 8x pitch comp winner; 6x student Leader; 3x researcher; 1x exited founder; The Brik &amp; AxA Trading</p>
 </section>
 
 <!-- CAREER -->
@@ -414,18 +420,176 @@
 <!-- BLOG -->
 <section id="blog">
   <h2>Blog</h2>
-  <p><a href="firstblogpost.html">Hackathons and why everyone should be doing them</a></p>
-  <p><a href="secondblogpost.html">The Bull Semen Story and What I learned from it</a></p>
-  <p><a href="thirdblogpost.html">I studied in India and failed hard?</a></p>
-  <p><a href="forthblogpost.html">Do I wanna be like Tame Impala</a></p>
+  <div class="blog-list">
+    <article class="blog-item">
+      <h3><a href="blog/01_2m_updates-on-the-brik-live-in-3-retailers-finally-sold-enough-to-break-e.html">Distribution Is Harder Than Execution</a></h3>
+      <p class="blog-date">2m</p>
+      <p>updates on The Brik. live in 3 retailers. finally sold enough to break even on this batch. 3 years ago if you asked me what would be the hardest thing about building something, i’d say ...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/02_1w_made-this-really-quickly-for-my-family-in-india-last-night-aaharasrayg.html">Building Aahar for My Family</a></h3>
+      <p class="blog-date">1w • Edited</p>
+      <p>made this really quickly for my family in india last night: aahar.asraygopa.com one of my family friends pays a nutritionist to tell them how they can improve their meals. it got me thi...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/03_1w_learning-experience-today-with-the-brik.html">Retail Sales Is Its Own Skill</a></h3>
+      <p class="blog-date">1w • Edited</p>
+      <p>learning experience today with The Brik. i tried pitching the brik to small retailers in person and honestly, it did not go that well. i walked in without appointments, caught people at...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/04_1w_if-youre-a-software-engineer-or-really-any-kind-of-engineer-why-arent-.html">Why Engineers Should Do Charity Hackathons</a></h3>
+      <p class="blog-date">1w</p>
+      <p>if you're a software engineer (or really any kind of engineer), why aren't you doing charity hackathons? nonprofits and charities have the same problems as everyone else: outdated websi...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/05_1w_one-of-the-worst-parts-of-big-events-is-when-cell-service-just-dies.html">Encore and the Case for Offline Event Messaging</a></h3>
+      <p class="blog-date">1w • Edited</p>
+      <p>One of the worst parts of big events is when cell service just dies. I’ve experienced this at Jack Trice during football games, at a recent concert, and at hackathons and conferences. O...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/06_1w_four-years-ago-i-kept-losing-my-wallet-and-dorm-keys-at-iowa-state-rep.html">The Brik Started as a Lost-Key Problem</a></h3>
+      <p class="blog-date">1w</p>
+      <p>Four years ago, I kept losing my wallet and dorm keys. At Iowa State, replacing a lost dorm key cost $160, so I decided to build a better solution. I started learning CAD and got into 3...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/09_2mo_flying-back-to-des-moines-right-now-but-this-weekend-i-competed-in-la-.html">What I Built at LA Hacks 2026</a></h3>
+      <p class="blog-date">2mo • Edited</p>
+      <p>flying back to des moines right now, but this weekend i competed in la hacks 2026. me, Luca, Justin, and Rohan made angelware, a real-time emergency response system that uses rf and bro...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/11_2mo_its-been-a-pleasure-serving-as-the-first-president-of-the-isu-algorith.html">Restarting Iowa State Algorithmic Trading Club</a></h3>
+      <p class="blog-date">2mo</p>
+      <p>its been a pleasure serving as the first president of the ISU Algorithmic Trading Club ever since its refounding last semester. Arjun and i restarted the club because we were building o...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/14_2mo_announcing-my-retirement-from-hackathons-after-lahacks.html">Retiring from Hackathons, Kind Of</a></h3>
+      <p class="blog-date">2mo • Edited</p>
+      <p>announcing my retirement from hackathons… after LAHacks. it’s been a crazy run. coming into college, i didn’t even really want to be a CS major. it felt abstract, kinda disconnected fro...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/16_3mo_ive-been-getting-this-question-a-lot-lately-from-people-doing-their-fi.html">How to Actually Win a Hackathon</a></h3>
+      <p class="blog-date">3mo</p>
+      <p>I’ve been getting this question a lot lately from people doing their first hackathons: how do you actually win a hackathon? After doing a bunch of them, here’s my honest take. Most peop...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/17_3mo_honestly-something-ive-been-noticing-in-conversations-around-iowa-stat.html">Innovation Does Not Require a Startup</a></h3>
+      <p class="blog-date">3mo</p>
+      <p>Honestly, something I’ve been noticing in conversations around Iowa State lately: entrepreneurship isn’t for everyone. Innovation is. Right now, there’s this weird cultural push where i...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/18_3mo_imo-cardboard-might-be-the-best-invention-ever-made-not-the-wheel.html">Build the Cardboard Version First</a></h3>
+      <p class="blog-date">3mo • Edited</p>
+      <p>imo cardboard might be the best invention ever made. not the wheel. i actually owe cardboard the start of my building career. i don’t think I’ve ever really said this during my college ...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/19_4mo_spamming-cursor-or-claude-code-and-hoping-the-market-reacts-is-not-the.html">Build Fast, Validate Faster</a></h3>
+      <p class="blog-date">4mo</p>
+      <p>Spamming Cursor or Claude Code and hoping the market reacts is not the move. The tools are insane right now. You can ship an MVP in a weekend. You can wire up auth, payments, AI feature...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/20_4mo_every-college-should-require-or-at-least-strongly-encourage-students-t.html">Every College Student Should Do One Hackathon</a></h3>
+      <p class="blog-date">4mo</p>
+      <p>Every college should require (or at least strongly encourage) students to do one hackathon, regardless of major. Not because everyone needs to become a software engineer. But because bu...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/21_4mo_if-another-person-asks-me-to-build-their-entire-app-or-website-for-50-.html">Ideas Are Not Half the Cap Table</a></h3>
+      <p class="blog-date">4mo</p>
+      <p>If another person asks me to build their entire app or website for 50% equity because they’re “handling the business side,” I might lose it a little. I remember seeing this as a meme fr...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/22_4mo_i-think-people-should-stop-making-posts-about-participating-in-things-.html">Stop Posting Just to Say You Participated</a></h3>
+      <p class="blog-date">4mo</p>
+      <p>I think people should stop making posts about participating in things. These posts are lowkey stupid and don’t make you stand out. Make posts about what went wrong and how you could’ve ...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/23_4mo_i-genuinely-think-iowa-state-is-about-to-become-a-school-people-associ.html">Why I Am Bullish on Iowa State Quant</a></h3>
+      <p class="blog-date">4mo • Edited</p>
+      <p>I genuinely think Iowa State is about to become a school people associate with quant and high finance. I am bullish on this opinion. For a long time, if you wanted to break into Wall St...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/24_4mo_everyone-and-their-mom-are-making-startups-i-scroll-for-five-minutes-a.html">Bring Back Building for the Love of It</a></h3>
+      <p class="blog-date">4mo</p>
+      <p>Everyone and their mom are making startups. I scroll for five minutes and it’s stealth AI founders, building-in-public threads, $1k pre-seed announcements, and 21-year-olds talking abou...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/25_4mo_its-crazy-to-think-im-in-the-era-of-software-engineering-where-you-ask.html">Bring Back Stack Overflow</a></h3>
+      <p class="blog-date">4mo • Edited</p>
+      <p>It’s crazy to think I’m in the era of software engineering where you ask AI to solve your SWE questions. My dad lived in the era where he’d hop on Yahoo forums in the early 2000s to fig...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/26_4mo_hot-take-if-youre-a-college-student-in-any-major-with-an-idea-for-a-we.html">The One-Day MVP Standard</a></h3>
+      <p class="blog-date">4mo • Edited</p>
+      <p>Hot take: if you’re a college student, in any major, with an idea for a website or app, getting a real functioning MVP in front of users shouldn’t take more than a day. AI, vibecoding, ...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/27_5mo_sold-my-first-tech-product.html">Selling My First Tech Product</a></h3>
+      <p class="blog-date">5mo</p>
+      <p>sold my first tech product. safebite (safebite.suppersquad.app/) is a website that creates allergen-friendly menus by letting you simply upload photos of your menu. the site quickly gen...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/28_5mo_with-my-final-first-day-of-school-coming-up-tmrw-i-decided-to-open-sou.html">Open-Sourcing Tools for Iowa Staters</a></h3>
+      <p class="blog-date">5mo • Edited</p>
+      <p>with my final first day of school coming up tmrw, I decided to open-source a couple things to help out iowa staters. https://lnkd.in/gffUnuNJ – accessplus (rip) used to let you download...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/30_6mo_built-pippa-at-ivy-hacks-2025-3rd-place-with-justin-moran-and-arjun-pa.html">Turning Meal Logging into Caring for Pippa</a></h3>
+      <p class="blog-date">6mo</p>
+      <p>built pippa at ivy hacks 2025 (3rd place) with Justin Moran and Arjun Patel and we had a 90% finished app to help people recovering from eating disorders. it started as this idea where ...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/33_8mo_i-love-pitching-its-probably-my-favorite-part-of-building-startups-ive.html">PitchPost and the Pitch Competition Problem</a></h3>
+      <p class="blog-date">8mo • Edited</p>
+      <p>I love pitching; it’s probably my favorite part of building startups. I’ve done 30+ competitions, mostly regional, but finding new ones is always a pain. Most lists are outdated or inco...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/35_9mo_the-scalar-news-app-is-live.html">Launching the Scalar News App</a></h3>
+      <p class="blog-date">9mo • Edited</p>
+      <p>The Scalar News App is Live! https://lnkd.in/e5MitXU6 Back in high school, I noticed many classmates didn’t know what was happening in the world, which sparked a question: what if globa...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/37_10mo_this-summer-i-had-the-opportunity-to-intern-at-principal-financial-gro.html">What I Learned Interning at Principal</a></h3>
+      <p class="blog-date">10mo</p>
+      <p>This summer, I had the opportunity to intern at Principal Financial Group as a Software Engineer Intern. I worked on building tools for actuaries and gained valuable exposure to the act...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/39_1yr_i-am-thrilled-to-announce-that-our-teamarjun-patel-issmale-bekri-akhil.html">Building CyDine and Winning Best App</a></h3>
+      <p class="blog-date">1yr • Edited</p>
+      <p>I am thrilled to announce that our team—Arjun Patel, Issmale Bekri, Akhil Pallem, and I—has been honored with the Best Project and App Award in our COM S 3090 class, the app development...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/40_1yr_im-thrilled-to-share-that-i-officially-launched-the-brik-at-the-iowa-s.html">Launching The Brik at My First Market</a></h3>
+      <p class="blog-date">1yr</p>
+      <p>I’m thrilled to share that I officially launched The Brik at the Iowa State University Jingle and Mingle Holiday Market this past Friday. This was my first-ever sales experience, and it...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/44_1yr_i-had-the-great-opportunity-to-attend-and-represent-iowa-state-at-the-.html">Lessons from Okoboji Entrepreneurship Institute</a></h3>
+      <p class="blog-date">1yr • Edited</p>
+      <p>I had the great opportunity to attend and represent Iowa State at the Okoboji Entrepreneurship Institute, a week-long entrepreneurship bootcamp and Iowa’s premier entrepreneurship event...</p>
+    </article>
+    <article class="blog-item">
+      <h3><a href="blog/46_2yr_i-just-completed-my-first-month-as-a-summer-research-intern-at-ara-wir.html">My First Month at ARA Wireless Lab</a></h3>
+      <p class="blog-date">2yr</p>
+      <p>I just completed my first month as a Summer Research Intern at ARA Wireless Lab, an NSF-funded Communications and Wireless Lab. During this time, I have had the privilege of conducting ...</p>
+    </article>
+  </div>
 </section>
 
 <script>
   function show(id) {
     document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
+    if (location.hash !== '#' + id) {
+      history.replaceState(null, '', '#' + id);
+    }
   }
-  show('about');
+
+  function showFromHash() {
+    const id = location.hash.replace('#', '') || 'about';
+    show(document.getElementById(id) ? id : 'about');
+  }
+
+  showFromHash();
+  window.addEventListener('hashchange', showFromHash);
 
   function applyDark(isDark) {
     document.body.classList.toggle('dark', isDark);
